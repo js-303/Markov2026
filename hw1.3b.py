@@ -51,3 +51,4 @@ ax.scatter(M, E(M), color='black', label='estimate at N')
 ax.legend(loc='upper right')
 
 plt.show()
+
