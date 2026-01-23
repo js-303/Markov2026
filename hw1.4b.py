@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-N = 10**6
+N = 10**5
 t = np.linspace(0, 60, 1000)
 T = lambda t: (3*t**2/(60)**3)
 
@@ -24,3 +24,4 @@ ax.set_xlabel("t")
 ax.set_ylabel("$f_{T}(t)$")
 ax.legend(loc='upper right')
 plt.show()
+
