@@ -1,0 +1,31 @@
+import numpy as np
+from scipy import optimize
+from math import e
+import time
+
+start = time.time()
+n = 10**6
+
+F = lambda x: -x*e**(-x)-e**(-x)+1
+U = []
+R =[]
+
+def sample(n):
+    U = np.random.uniform(0, 1, n)
+    return U
+
+U = sample(n)
+
+def generate(U, F):
+    for u in U:
+        g = lambda x: F(x) - u
+        r = optimize.newton(g, x0=1)
+        if r >= 0:
+            R.append(r)
+    return R
+
+R = generate(U, F)
+
+end = time.time()
+print(R)
+print("Execution time:", end - start)
