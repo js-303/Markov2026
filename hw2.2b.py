@@ -21,5 +21,6 @@ def generate(F, n):
 R = generate(F, n)
 
 end = time.time()
-
+print(R)
 print("Execution time:", end - start)
+
