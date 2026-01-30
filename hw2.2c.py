@@ -23,7 +23,7 @@ def AR(f, g, c, n):
     return X
 
 X = AR(f, g, c, n)
-print(X)
 
 end = time.time()
+
 print("Execution time:", end - start)
