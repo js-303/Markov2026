@@ -26,4 +26,6 @@ X = AR(f, g, c, n)
 
 end = time.time()
 
+print(X)
 print("Execution time:", end - start)
+
