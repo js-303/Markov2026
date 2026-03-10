@@ -13,4 +13,9 @@ evecs = p_T.eigenvects()
 print("Eigenvalues:", evals)
 print("Eigenvectors:", evecs)
 
+p_sub = p.subs(a, 0.99)
+evals_sub = p_sub.T.eigenvals()
+evecs_sub = p_sub.T.eigenvects()
 
+print("Eigenvalues with a=0.99:", evals_sub)
+print("Eigenvectors with a=0.99:", evecs_sub)
